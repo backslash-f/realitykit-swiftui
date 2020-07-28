@@ -40,6 +40,10 @@ private extension CustomARView {
     }
 
     func setupARView() {
+
+        // Uncomment to user ".nonAR" camera.
+        //useNonARCameraSample()
+
         let config = ARWorldTrackingConfiguration()
         config.planeDetection = [.horizontal, .vertical]
         config.environmentTexturing = .automatic
@@ -47,5 +51,21 @@ private extension CustomARView {
             config.sceneReconstruction = .mesh
         }
         session.run(config)
+    }
+
+    /// From: https://developer.apple.com/forums/thread/122229
+    func useNonARCameraSample() {
+
+        // RealityKit now adds and uses a default PerspectiveCamera.
+        cameraMode = .nonAR
+
+        // Provide your own PerspectiveCamera.
+        // See: https://developer.apple.com/documentation/realitykit/perspectivecamera
+        let cameraEntity = PerspectiveCamera()
+        cameraEntity.camera.fieldOfViewInDegrees = 140
+        let cameraAnchor = AnchorEntity(world: .one)
+        cameraAnchor.addChild(cameraEntity)
+
+        scene.addAnchor(cameraAnchor)
     }
 }
