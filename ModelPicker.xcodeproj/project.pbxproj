@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 53;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -174,8 +174,9 @@
 		07D53ADE24CB177B00195440 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1200;
-				LastUpgradeCheck = 1200;
+				LastUpgradeCheck = 1430;
 				TargetAttributes = {
 					07D53AE524CB177B00195440 = {
 						CreatedOnToolsVersion = 12.0;
@@ -368,7 +369,7 @@
 				DEVELOPMENT_TEAM = UKS358BH88;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = ModelPicker/Support/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -390,7 +391,7 @@
 				DEVELOPMENT_TEAM = UKS358BH88;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = ModelPicker/Support/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
