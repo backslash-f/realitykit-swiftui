@@ -41,7 +41,7 @@ private extension CustomARView {
 
     func setupARView() {
 
-        // Uncomment to user ".nonAR" camera.
+        // Uncomment to use ".nonAR" camera.
         //useNonARCameraSample()
 
         let config = ARWorldTrackingConfiguration()
